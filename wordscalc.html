@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css">
+    <title>JS INTRO</title>
+</head>
+<body>
+<div class="lencontainer">
+        <h1 id="h1">Type a Sentence </h1>
+        <div class="input-div">
+            <input type="text" id="input" placeholder="Type">
+        </div>
+        <div >
+            <button  type="submit" onclick="convert()">CALCULATE</button>
+        </div>     
+    <div id="result">
+        
+    </div>
+        </div>
+    <!--<h1 id="h1">hello world</h1>
+    <button onclick="change()">change</button>
+    <h2 id="id">hello</h2>-->
+
+</body>
+    <script>
+function convert(){
+         let str1=document.getElementById("input").value
+         let len=str1.length
+         let result=document.getElementById("result")
+         result.innerHTML=len+" WORDS"
+       
+    }
+    </script>
+</body> 
+</html>
